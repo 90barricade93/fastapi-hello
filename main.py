@@ -64,7 +64,7 @@ async def root() -> Message:
         message="Welkom bij de API van Raymond voor Sharif! 🎉 Gebruik /api/v1/hello of POST naar /api/v1/talk"
     )
 
-@app.get(f"{API_PREFIX}/hello", response_model=Message)
+@app.get("/hello", response_model=Message)
 async def hello() -> Message:
     """
     Greet the user with a friendly message and current time.
@@ -83,7 +83,7 @@ async def hello() -> Message:
     )
 
 @app.post(
-    f"{API_PREFIX}/talk",
+    "/talk",
     response_model=APIResponse,
     status_code=status.HTTP_201_CREATED
 )
@@ -119,7 +119,7 @@ async def talk(reply: SharifReply) -> APIResponse:
         )
 
 # Add health check endpoint
-@app.get(f"{API_PREFIX}/health", status_code=status.HTTP_200_OK)
+@app.get("/health", status_code=status.HTTP_200_OK)
 async def health_check() -> dict:
     """Health check endpoint for monitoring."""
     return {"status": "healthy", "timestamp": get_current_time()}
