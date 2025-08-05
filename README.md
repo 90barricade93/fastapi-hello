@@ -66,3 +66,8 @@ Wanneer de applicatie draait, is de interactieve API documentatie beschikbaar op
 ## 📄 Licentie
 
 Geen licentie voor de demo.
+
+## 📝 Deployed via Render
+
+De API is ge-deployed via Render en is beschikbaar op: https://fastapi-hello-k6lq.onrender.com
+
