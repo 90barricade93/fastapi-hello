@@ -22,46 +22,16 @@ Een eenvoudige maar krachtige API demo gemaakt voor de sollicitatie bij Sprints 
 
 ## ⚡ Snel aan de slag
 
-### Vereisten
+## FastAPI Hello - Demo project
 
-- Python 3.8 of hoger
-- pip (Python package manager)
+Een simpele FastAPI-app gebouwd voor mijn sollicitatie bij Sprints & Sneakers, gericht op low/no-code AI engineering.
 
-### Installatie
+- ✅ `/health` — eenvoudige health check
+- 🔁 `/get` — retourneert JSON met testdata
+- 💬 `/talk?msg=hello` — simuleert een interactief antwoord via queryparam
 
-1. Kloon de repository:
-   ```bash
-   git clone [repository-url]
-   cd S&S
-   ```
-
-2. Installeer de benodigde packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Gebruik
-
-Start de applicatie met:
-```bash
-uvicorn main:app --reload
-```
-
-Bezoek vervolgens in je browser:
-```
-http://127.0.0.1:8000/hello
-```
-
-Of test de API met curl:
-```bash
-curl http://127.0.0.1:8000/hello
-```
-
-## 📚 API Documentatie
-
-Wanneer de applicatie draait, is de interactieve API documentatie beschikbaar op:
-- **Swagger UI**: http://127.0.0.1:8000/docs
-- **ReDoc**: http://127.0.0.1:8000/redoc
+➡️ Live demo: https://fastapi-hello-k6lq.onrender.com  
+➡️ Repo: https://github.com/90barricade93/fastapi-hello
 
 ## 📄 Licentie
 
