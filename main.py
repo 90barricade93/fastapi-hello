@@ -19,14 +19,13 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Constants
-API_PREFIX = "/api/v1"
 TIMEZONE_OFFSET = 2  # UTC+2 (Nederland zomertijd)
 
 app = FastAPI(
     title="Demo for Sharif API",
     description="A simple API for message exchange with Sharif",
     version="1.0.0",
-    openapi_url=f"{API_PREFIX}/openapi.json"
+    openapi_url=f"/openapi.json"
 )
 
 # Models
@@ -61,7 +60,7 @@ def get_current_time() -> str:
 async def root() -> Message:
     """Root endpoint with welcome message."""
     return Message(
-        message="Welkom bij de API van Raymond voor Sharif! 🎉 Gebruik /api/v1/hello of POST naar /api/v1/talk"
+        message="Welkom bij de API van Raymond voor Sharif! 🎉 Gebruik /hello of POST naar /talk"
     )
 
 @app.get("/hello", response_model=Message)
